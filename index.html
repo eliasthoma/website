@@ -1,1 +1,25 @@
-Hello World
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elias Thoma - Obstbaumpflege & Geodatenmanagement</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type='text/javascript'>
+        $.get('header.html',function(response){ 
+            $('#header').html(response); 
+        });
+        $.get('footer.html',function(response){ 
+            $('#footer').html(response); 
+        })
+        </script>
+  </head>
+  <body>
+    <div id="header"></div> <!-- links to header.html -->
+    <div class="position-absolute top-50 w-100 text-center text-bg-primary">Content</div>
+    <script src="js/bootstrap.js"></script>
+    <div id="footer"></div> <!-- links to footer.html -->
+  </body>
+</html>

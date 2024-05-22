@@ -1,0 +1,11 @@
+:root
+{
+    --bs-primary: #1C5700;
+    --bs-secondary: #FED33A;
+    --bs-dark: #002301;
+}
+
+.text-bg-primary {
+    color: #fff !important;
+    background-color: #1C5700 !important;
+  }
