@@ -17,7 +17,7 @@
     --bs-primary-bg-subtle:var(--transparent);
 
     /*Rundheit von allem*/
-    --corner-rounding: 40px;
+    --corner-rounding: 40px;  
 }
 
 html {
@@ -379,7 +379,7 @@ p {
     scroll-margin-top: 120px;
   }
 
-  /*=========================== footer ===========================*/
+/*=========================== footer ===========================*/
 
   /* #footer{
     background-color: var(--card-background);
@@ -388,16 +388,16 @@ p {
 
   } */
 
-  .logo-footer {
+.logo-footer {
     padding-top: 1rem;
   }
 
-  .list-group-item {
+.list-group-item {
     background-color: var(--transparent);
     border: none;
   } 
 
-  .links-footer {
+.links-footer {
     text-align: end;
 }
 
