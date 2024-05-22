@@ -334,6 +334,10 @@ p {
 
 /*=========================== contact ===========================*/
 
+#kontakt {
+    scroll-margin-top: 120px;
+  }
+
 .kontakt-bild{
     object-fit: cover;
     border-radius: var(--corner-rounding);
