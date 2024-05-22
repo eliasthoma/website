@@ -298,3 +298,12 @@ p {
     }
 }
 
+
+/*=========================== Textfeld Komponente ===========================*/
+.textblock {
+    border-radius: var(--corner-rounding);
+    background-color: var(--card-background);
+
+    padding: 4rem 2rem;;
+}
+
