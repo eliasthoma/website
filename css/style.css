@@ -6,7 +6,7 @@
 
     /*custom colors*/
     --text-color:#2F1C00;
-    --hover-light: #DAE9D3;
+    --hover-light: #bbeea478;
     --hover-neutral: #9ED087;
     --hover-dark: #014804;
 
@@ -183,7 +183,7 @@ p {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: .75rem;
-    background-color: rgba(255, 255, 255, 0.715) !important;
+    background-color: rgba(255, 255, 255, 0.89) !important;
     backdrop-filter: blur(8px) saturate(120%) contrast(120%);
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     border-radius: var(--corner-rounding);
@@ -377,6 +377,7 @@ p {
     background-color: var(--card-background);
     border-radius: var(--corner-rounding) var(--corner-rounding) 0 0;
     padding-top: 2rem;
+
   }
 
   .logo-footer {
