@@ -1,5 +1,4 @@
-:root
-{
+:root {
     --bs-primary: #1C5700;
     --bs-secondary: #FED33A;
     --bs-dark: #002301;
@@ -9,3 +8,11 @@
     color: #fff !important;
     background-color: #1C5700 !important;
   }
+
+body {
+    /*Change Default Font*/
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
