@@ -8,7 +8,8 @@
     {
         $errors .= "\n Fehler: Es werden alle Felder benötigt";
     }
-    $name = $_POST['vorname'] . " " . $_POST['nachname'];
+    $vorname = $_POST['vorname'];
+    $nachname = $_POST['nachname'];
     $email_address = $_POST['email'];
     $message = $_POST['message'];
     if (!preg_match(
@@ -21,7 +22,7 @@
     if( empty($errors))
     {
     $to = $myemail;
-    $subject = "Website Kontaktformular: Nachricht von $name";
+    $subject = "Website Kontaktformular: Nachricht von $vorname $nachname";
     $body = $message;
 
     $headers = 'From: '. $email_address . "\r\n";

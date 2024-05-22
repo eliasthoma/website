@@ -180,8 +180,8 @@
       </div>
     </div>
 
-    <div class="kontakt">
-      <div class="container py-5 card-design">
+    <div class="kontakt" id="kontakt">
+      <div class="container pt-5 card-design">
 
         <h2>Kontakt</h2>
         <h5>Erzähl mir von deinem Projekt!</h5>
@@ -191,7 +191,7 @@
             <img src="img/placeholder2.png" class="kontakt-bild" alt="Portrait von Elias">
           </div>
           <div class="col-md-8">
-            <form target="transFrame" id="contactForm" method="post" action="send_mail.php" class="needs-validation"
+            <form target="transFrame" id="contactForm" method="post" action="php/send-mail.php" class="needs-validation"
               novalidate>
               <div class="row">
                 <div class="col-md-6">
@@ -234,7 +234,6 @@
                   onclick="successMessage()">Absenden</button>
               </div>
             </form>
-
             <iframe style="height: 0px;" name="transFrame" id="transFrame"></iframe>
           </div>
         </div>
@@ -265,6 +264,7 @@
   </div>
 
   <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
   <div id="footer"></div> <!-- links to footer.html -->
 </body>
 
