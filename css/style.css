@@ -128,7 +128,7 @@ p {
 }
 
 .accordion-body {
-    padding-top:  1rem;
+    padding-top:  0rem;
     padding-bottom:  1rem;
     margin-top:  0;
 }
@@ -221,7 +221,6 @@ p {
     font-weight: 400;
     font-size: 1.15rem;
 
-  
   }
   
 .nav-link:hover {
@@ -338,7 +337,7 @@ p {
 .kontakt-bild{
     object-fit: cover;
     border-radius: var(--corner-rounding);
-    max-height: 30vh;
+
     width: 100%;
     height: 100%;
     margin-bottom: 2rem;
@@ -370,3 +369,46 @@ p {
     border-color: var(--Success) !important;
     pointer-events: none;
   }
+
+
+  /*=========================== footer ===========================*/
+
+  #footer{
+    background-color: var(--card-background);
+    border-radius: var(--corner-rounding) var(--corner-rounding) 0 0;
+    padding-top: 2rem;
+  }
+
+  .logo-footer {
+    padding-top: 1rem;
+  }
+
+  .list-group-item {
+    background-color: var(--transparent);
+    border: none;
+  } 
+
+  .links-footer {
+    text-align: end;
+}
+
+.footer-link {
+    margin-left: auto;  
+}
+
+  @media (max-width: 576px) {
+    .links-footer {
+        text-align: center;
+    }
+
+    .logo-footer {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+
+
+.debug {
+    background-color: #9ED087;
+}
