@@ -29,17 +29,17 @@
 <body>
   <div id="header"></div> <!-- links to header.html -->
   <!--<div class="position-absolute top-50 w-100 text-center text-bg-primary">Content</div> -->
-    <div class="container">
-  
-      <div class="row hero">
-        <div class="col-md-6 align-self-center">
-          <h1>Digga i bims der Elias</h1>
-          <p>mir doch egal was du willst</p>
-          <button type="button" class="btn btn-primary">Leck mich</button> <br>
-        </div>
-        <div class="col-md-6">
-          <img src="img/hero.png" class="hero-img absoulte-right" alt="Bild von Elias in einem Baum">
-        </div>
+  <div class="container">
+
+    <div class="row hero">
+      <div class="col-md-6 align-self-center">
+        <h1>Digga i bims der Elias</h1>
+        <p>mir doch egal was du willst</p>
+        <button type="button" class="btn btn-primary">Leck mich</button> <br>
+      </div>
+      <div class="col-md-6">
+        <img src="img/hero.png" class="hero-img absoulte-right" alt="Bild von Elias in einem Baum">
+      </div>
     </div>
 
 
@@ -65,10 +65,10 @@
         <div class="row py-3">
           <div class="col-md">
             <p>
-            Der Lebensraum von über 5000 Tier- und Pflanzarten ist durch mangelnde Pflege stark
-            bedroht. Durch fachgerechte Pflege tragen Streuobstweise zur Artvielfalt in der Kulturlandschaft bei. Als
-            zertifizierter Streuobst-Baumwart bin Ich Ihr Ansprechpartner im Bereich Streuobst in Aschaffenburg und
-            Umgebung.</p>
+              Der Lebensraum von über 5000 Tier- und Pflanzarten ist durch mangelnde Pflege stark
+              bedroht. Durch fachgerechte Pflege tragen Streuobstweise zur Artvielfalt in der Kulturlandschaft bei. Als
+              zertifizierter Streuobst-Baumwart bin Ich Ihr Ansprechpartner im Bereich Streuobst in Aschaffenburg und
+              Umgebung.</p>
           </div>
           <div class="col-md">
             <p>
@@ -180,9 +180,73 @@
       </div>
     </div>
 
+    <div class="kontakt">
+      <div class="container py-5 card-design">
+
+        <h2>Kontakt</h2>
+        <h5>Erzähl mir von deinem Projekt!</h5>
+
+        <div class="row py-4">
+          <div class="col-md-4">
+            <img src="img/placeholder2.png" class="kontakt-bild" alt="Portrait von Elias">
+          </div>
+          <div class="col-md-8">
+            <form target="transFrame" id="contactForm" method="post" action="send_mail.php" class="needs-validation"
+              novalidate>
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- Vorname input-->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="vorname" vorname="vorname" type="text" placeholder=""
+                      data-sb-validations="required" required />
+                    <label for="vorname">Vorname *</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- Nachname input-->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="nachname" nachname="nachname" type="text" placeholder=""
+                      data-sb-validations="required" required />
+                    <label for="nachname">Nachname *</label>
+                  </div>
+                </div>
+              </div>
+              <!-- Email address input-->
+              <div class="form-floating mb-3">
+                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com"
+                  data-sb-validations="required,email" required />
+                <label for="email">E-Mail *</label>
+                <div class="invalid-feedback">
+                  Bitte gib eine gültige E-Mail-Adresse an
+                </div>
+                <div id="emailHelp" class="form-text">Deine E-Mail-Adresse wird nicht weitergegeben oder verarbeitet
+                </div>
+              </div>
+
+              <!-- Message input-->
+              <div class="form-floating mb-3">
+                <textarea class="form-control" id="message" name="message" type="text"
+                  placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"
+                  required></textarea>
+                <label for="message">Nachricht *</label>
+              </div><!-- Submit Button-->
+              <div><button class="btn btn-primary btn-xl my-4 px-5" id="submitButton" type="submit"
+                  onclick="successMessage()">Absenden</button>
+              </div>
+            </form>
+
+            <iframe style="height: 0px;" name="transFrame" id="transFrame"></iframe>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
     <div class="containter-md py-5">
       <div class="container">
-        <h1>Style-Übersicht </h1> 
+        <h1>Style-Übersicht </h1>
         <br>
         <h1>h1 Was geht digga</h1>
         <h2>h2 Was geht digga</h2>
@@ -191,13 +255,13 @@
         <h5>h5 Was geht digga</h5>
         <p>Lorem ipsum du depp 123 was ist das für<br> ein schwachsinn dieser text macht keinen Sinn lol <br> ein
           schwachsinn dieser text macht keinen Sinn lol</p>
-          <button type="button" class="btn btn-primary">Primary</button> <br>
-          <button type="button" class="btn btn-primary btn-lg">Large Primary button</button> <br>
-          <button type="button" class="btn btn-secondary">Secondary</button> <br>
-          <button type="button" class="btn btn-secondary btn-lg">Large Secondary button</button> <br>
-          <button type="button" class="btn btn-link ">Link button</button>
-        </div>
+        <button type="button" class="btn btn-primary">Primary</button> <br>
+        <button type="button" class="btn btn-primary btn-lg">Large Primary button</button> <br>
+        <button type="button" class="btn btn-secondary">Secondary</button> <br>
+        <button type="button" class="btn btn-secondary btn-lg">Large Secondary button</button> <br>
+        <button type="button" class="btn btn-link ">Link button</button>
       </div>
+    </div>
   </div>
 
   <script src="js/bootstrap.js"></script>
