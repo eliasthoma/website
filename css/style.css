@@ -417,7 +417,26 @@ p {
       }
 }
 
+  /*=========================== impressum ===========================*/
 
-.debug {
-    background-color: #9ED087;
-}
+  #impressum {
+    max-width: 40rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  #impressum li {
+    font-size: 1.25em;
+  }
+
+  #impressum > div > h1 {
+    padding-top: 7rem;
+  }
+
+  #impressum > h2 {
+    padding-top: 3rem;
+  }
+
+  #impressum > h3 {
+    padding-top: 1.75rem;
+  }
