@@ -202,15 +202,18 @@ p {
 }
 
 .navbar-nav > li{
-    padding-left:4rem;
-    padding-right:0rem;
-    width: 100px; 
+    text-align: center;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
+
 
 .navbar-toggler {
     border: none;
     padding-right: 2rem;
 }
+
 
 .nav-link {
     border-radius: var(--corner-rounding);
