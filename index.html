@@ -1,75 +1,126 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Elias Thoma - Obstbaumpflege & Geodatenmanagement</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script type='text/javascript'>
-        $.get('header.html',function(response){ 
-            $('#header').html(response); 
-        });
-        $.get('footer.html',function(response){ 
-            $('#footer').html(response); 
-        })
-        </script>
-  </head>
-  <body>
-    <div id="header"></div> <!-- links to header.html -->
-    <!--<div class="position-absolute top-50 w-100 text-center text-bg-primary">Content</div> -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elias Thoma - Obstbaumpflege & Geodatenmanagement</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&display=swap"
+    rel="stylesheet">
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script type='text/javascript'>
+    $.get('header.html', function (response) {
+      $('#header').html(response);
+    });
+    $.get('footer.html', function (response) {
+      $('#footer').html(response);
+    })
+  </script>
+</head>
+
+<body>
+  <div id="header"></div> <!-- links to header.html -->
+  <!--<div class="position-absolute top-50 w-100 text-center text-bg-primary">Content</div> -->
+
+  <div class="container">
+    <div class="containter-md py-5">
+      <h1>Digga i bims der Elias</h1>
+    </div>
+
 
     <div class="containter-md py-5">
       <div class="row img-text-card">
-        <div class="col-sm-6 card-bild">
+        <div class="col-md-6 card-bild">
           <img src="img/placeholder.png" alt="...">
         </div>
-        <div class="col-sm-6 card-text g-5">
+        <div class="col-md-6 card-text g-5">
           <h3 class="card-title">Für mehr Artenvielfalt</h5>
-          <p class="card-text">Der Lebensraum von über 5000 Tier- und Pflanzarten ist durch mangelnde  Pflege stark bedroht. Durch fachgerechte Pflege tragen Streuobstweise  zur Artvielfalt in der Kulturlandschaft bei. Als zertifizierter Streuobst-Baumwart bin Ich Ihr Ansprechpartner im Bereich Streuobst in Aschaffenburg und Umgebung.</p>
+            <p class="card-text">Der Lebensraum von über 5000 Tier- und Pflanzarten ist durch mangelnde Pflege stark
+              bedroht. Durch fachgerechte Pflege tragen Streuobstweise zur Artvielfalt in der Kulturlandschaft bei. Als
+              zertifizierter Streuobst-Baumwart bin Ich Ihr Ansprechpartner im Bereich Streuobst in Aschaffenburg und
+              Umgebung.</p>
         </div>
       </div>
     </div>
 
+
+
     <div class="container-md py-5">
-      <div class="accordion accordion-flush" id="accordionExample">
-        <div class="accordion-item card-background">
+      <h2>
+        Leistungen in der Baumpflege
+      </h2>
+      <div class="accordion accordion-flush my-4" id="accordionLeistungen">
+        <div class="accordion-item">
           <h2>
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Pflanzung
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item  my-3">
-          <h2>
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionLeistungen">
+            <div class="accordion-body ">
+              <div class="row gy-5">
+                <div class="col-sm-8">
+                  Ich biete Ihnen nachhaltige und ästhetische Baum-Pflanzungsdienste an. Dabei wähle ich sorgfältig die
+                  besten Baumarten für Ihren Standort aus und sorge für eine fachgerechte Pflanzung. So stelle ich
+                  sicher, dass die Bäume optimal wachsen und gedeihen. Profitieren Sie von meiner Expertise für ein
+                  grüneres und gesünderes Umfeld.
+                </div>
+                <div class="col-sm-4">
+                  <img src="img/placeholder.png" class="accord-bild" alt="...">
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2>
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionLeistungen">
+            <div class="accordion-body">
+              <div class="row gy-5">
+                <div class="col-sm-8">
+                  Ich biete Ihnen nachhaltige und ästhetische Baum-Pflanzungsdienste an. Dabei wähle ich sorgfältig die
+                  besten Baumarten für Ihren Standort aus und sorge für eine fachgerechte Pflanzung. So stelle ich
+                  sicher, dass die Bäume optimal wachsen und gedeihen. Profitieren Sie von meiner Expertise für ein
+                  grüneres und gesünderes Umfeld.
+                </div>
+                <div class="col-sm-4">
+                  <img src="img/placeholder.png" class="accord-bild" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2>
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Accordion Item #3
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionLeistungen">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="row gy-5">
+                <div class="col-sm-8">
+                  Ich biete Ihnen nachhaltige und ästhetische Baum-Pflanzungsdienste an. Dabei wähle ich sorgfältig die
+                  besten Baumarten für Ihren Standort aus und sorge für eine fachgerechte Pflanzung. So stelle ich
+                  sicher, dass die Bäume optimal wachsen und gedeihen. Profitieren Sie von meiner Expertise für ein
+                  grüneres und gesünderes Umfeld.
+                </div>
+                <div class="col-sm-4">
+                  <img src="img/placeholder.png" class="accord-bild" alt="...">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -82,11 +133,13 @@
       <h3>h3 Was geht digga</h3>
       <h4>h4 Was geht digga</h4>
       <h5>h5 Was geht digga</h5>
-      <p>Lorem ipsum du depp 123 was ist das für<br> ein schwachsinn dieser text macht keinen Sinn lol <br> ein schwachsinn dieser text macht keinen Sinn lol</p>
+      <p>Lorem ipsum du depp 123 was ist das für<br> ein schwachsinn dieser text macht keinen Sinn lol <br> ein
+        schwachsinn dieser text macht keinen Sinn lol</p>
     </div>
+  </div>
 
+  <script src="js/bootstrap.js"></script>
+  <div id="footer"></div> <!-- links to footer.html -->
+</body>
 
-    <script src="js/bootstrap.js"></script>
-    <div id="footer"></div> <!-- links to footer.html -->
-  </body>
 </html>
