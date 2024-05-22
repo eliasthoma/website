@@ -27,6 +27,8 @@ html {
     background-color: #1C5700 !important;
   }
 
+/*=========================== Headlines ===========================*/
+
 h1 {
     font-family: "Lexend Giga", sans-serif;
     font-weight: 800;
@@ -57,6 +59,7 @@ p {
     font-weight: 400;
 }
 
+/*=========================== img-text-card ===========================*/
 
 .img-text-card {
     border-radius: var(--corner-rounding);
@@ -91,3 +94,5 @@ p {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+/*=========================== accordeon ===========================*/
