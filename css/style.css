@@ -4,15 +4,46 @@
     --bs-dark: #002301;
 }
 
-.text-bg-primary {
-    color: #fff !important;
-    background-color: #1C5700 !important;
-  }
-
-body {
+html {
     /*Change Default Font*/
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
+
+.text-bg-primary {
+    color: #fff !important;
+    background-color: #1C5700 !important;
+  }
+
+h1 {
+    font-family: "Lexend Giga", sans-serif;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: "Lexend Giga", sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "Lexend Giga", sans-serif;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: "Lexend Giga", sans-serif;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: "Lexend Giga", sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
