@@ -186,7 +186,7 @@ p {
     margin-top: .75rem;
     background-color: rgba(255, 255, 255, 0.715) !important;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     border-radius: var(--corner-rounding);
 
     max-width: 1400px;
@@ -319,11 +319,12 @@ p {
 @media (max-width: 768px) {
     .hero {
         padding-top: 5rem;
-        height: 40rem;
+        height: 35rem;
 
     }
     .hero-img {
         position: relative;
+        height: 25rem;
         left: 20%;
         top:-20%;
         z-index: -1;
