@@ -307,3 +307,26 @@ p {
     padding: 4rem 2rem;;
 }
 
+
+/*=========================== Hero ===========================*/
+
+.hero-img {
+    max-height: 500px;
+    z-index: -1;
+    
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 5rem;
+        height: 40rem;
+
+    }
+    .hero-img {
+        position: relative;
+        left: 20%;
+        top:-20%;
+        z-index: -1;
+        overflow: hidden;
+    }
+}
