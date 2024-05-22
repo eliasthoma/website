@@ -3,11 +3,20 @@
     --bs-secondary: #FED33A;
     --bs-dark: #002301;
 
+
+    /*custom colors*/
+    --text-color:#2F1C00;
+    --hover-light: #DAE9D3;
+    --hover-neutral: #9ED087;
+    --hover-dark: #014804;
+
     --card-background: #F9FAF8;
     --transparent: #ffffff00;
 
 
+    --bs-primary-bg-subtle:var(--transparent);
 
+    
     --corner-rounding: 40px;
 
 }
@@ -20,6 +29,9 @@ html {
     font-style: normal;
 }
 
+body {
+    color: var(--text-color);
+}
 
 
 .text-bg-primary {
@@ -63,7 +75,7 @@ p {
 
 .img-text-card {
     border-radius: var(--corner-rounding);
-    border-color: var(--transparent);
+    border-width: 0;
     background-color: var(--card-background);
     padding: 0;
     margin: 0;
@@ -78,7 +90,7 @@ p {
 }
 
 /*corrigiert die Rundungen bei vert. gestapelter karte*/
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
     .img-text-card img {
         border-radius: var(--corner-rounding) var(--corner-rounding) 0 0;
     }
@@ -95,4 +107,57 @@ p {
     padding-bottom: 2rem;
 }
 
-/*=========================== accordeon ===========================*/
+/*=========================== accordion ===========================*/
+
+
+.accordion-item {
+    background-color: var(--transparent);
+    border-width: 0px;
+}
+
+#accordionLeistungen {
+    background-color: var(--card-background);
+    border-radius: var(--corner-rounding);
+}
+
+.accordion-item h2{
+    margin: 0;
+}
+
+.accord-bild {
+    object-fit: cover;
+    border-radius: var(--corner-rounding) ;
+    width: 100%;
+    height: 100%;
+    max-height: 14rem;
+}
+
+.accordion-header {
+    background-color: var(--transparent);
+    border-radius: var(--corner-rounding);
+    border-color: var(--transparent);
+}
+
+.accordion-button {
+    background-color: var(--transparent);
+    border-radius: var(--corner-rounding);
+    border-color: var(--transparent);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.accordion-button:hover {
+    background-color: var(--hover-light);
+    border-color: var(--transparent);
+
+}
+
+.accordion-button:not(.collapsed){
+    
+    box-shadow: none;
+    color: var(--text-color);
+}
+
