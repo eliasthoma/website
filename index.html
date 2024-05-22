@@ -14,12 +14,17 @@
     rel="stylesheet">
   <script src="js/jquery-3.7.1.min.js"></script>
   <script type='text/javascript'>
+    /*
     $.get('header.html', function (response) {
       $('#header').html(response);
     });
     $.get('footer.html', function (response) {
       $('#footer').html(response);
     })
+    */
+    $(function() {
+         $("#header").load("header.html");
+      });
   </script>
 </head>
 

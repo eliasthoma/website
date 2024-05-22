@@ -19,6 +19,9 @@
     
     --corner-rounding: 40px;
 
+    /*navbar*/
+    --navbar-height: 8rem;
+
 }
 
 html {
@@ -170,5 +173,22 @@ p {
     
     box-shadow: none;
     color: var(--text-color);
+}
+
+/*=========================== navbar ===========================*/
+#header {
+    /*wirkt als platzhalter! muss selbe höhe haben wie navbar*/
+    height: var(--navbar-height) !important;
+}
+
+.navbar {
+    height: var(--navbar-height) !important;
+    margin-top: .75rem;
+    background-color: rgba(255, 255, 255, 0.715) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    border-radius: var(--corner-rounding);
+
+    max-width: 1400px;
 }
 
