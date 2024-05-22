@@ -1,87 +1,91 @@
-<div class="kontakt" id="kontakt">
-  <div class="container py-5 card-design">
+<div class="container">
+    <div class="kontakt" id="kontakt">
+        <div class="container py-5 card-design">
 
-    <h2>Kontakt</h2>
-    <h5>Erzähl mir von deinem Projekt!</h5>
+            <h2>Kontakt</h2>
+            <h5>Erzähl mir von deinem Projekt!</h5>
 
-    <div class="row py-4">
-      <div class="col-md-4">
-        <img src="img/placeholder2.png" class="kontakt-bild" alt="Portrait von Elias">
-      </div>
-      <div class="col-md-8">
-        <form target="transFrame" id="contactForm" method="post" action="php/send-mail.php" class="needs-validation"
-          novalidate>
-          <div class="row">
-            <div class="col-md-6">
-              <!-- Vorname input-->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="vorname" vorname="vorname" type="text" placeholder=""
-                  data-sb-validations="required" required />
-                <label for="vorname">Vorname *</label>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <!-- Nachname input-->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="nachname" nachname="nachname" type="text" placeholder=""
-                  data-sb-validations="required" required />
-                <label for="nachname">Nachname *</label>
-              </div>
-            </div>
-          </div>
-          <!-- Email address input-->
-          <div class="form-floating mb-3">
-            <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com"
-              data-sb-validations="required,email" required />
-            <label for="email">E-Mail *</label>
-            <div class="invalid-feedback">
-              Bitte gib eine gültige E-Mail-Adresse an
-            </div>
-            <div id="emailHelp" class="form-text">Deine E-Mail-Adresse wird nicht weitergegeben oder verarbeitet
-            </div>
-          </div>
+            <div class="row py-4">
+                <div class="col-md-4">
+                    <img src="img/placeholder2.png" class="kontakt-bild" alt="Portrait von Elias">
+                </div>
+                <div class="col-md-8">
+                    <form target="transFrame" id="contactForm" method="post" action="php/send-mail.php"
+                        class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Vorname input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="vorname" vorname="vorname" type="text"
+                                        placeholder="" data-sb-validations="required" required />
+                                    <label for="vorname">Vorname *</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Nachname input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="nachname" nachname="nachname" type="text"
+                                        placeholder="" data-sb-validations="required" required />
+                                    <label for="nachname">Nachname *</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" name="email" type="email"
+                                placeholder="name@example.com" data-sb-validations="required,email" required />
+                            <label for="email">E-Mail *</label>
+                            <div class="invalid-feedback">
+                                Bitte gib eine gültige E-Mail-Adresse an
+                            </div>
+                            <div id="emailHelp" class="form-text">Deine E-Mail-Adresse wird nicht weitergegeben oder
+                                verarbeitet
+                            </div>
+                        </div>
 
-          <!-- Message input-->
-          <div class="form-floating mb-3">
-            <textarea class="form-control" id="message" name="message" type="text"
-              placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"
-              required></textarea>
-            <label for="message">Nachricht *</label>
-          </div><!-- Submit Button-->
-          <div><button class="btn btn-primary btn-xl my-4 px-5" id="submitButton" type="submit"
-              onclick="successMessage()">Absenden</button>
-          </div>
-        </form>
-        <iframe style="height: 0px;" name="transFrame" id="transFrame"></iframe>
-      </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" name="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"
+                                data-sb-validations="required" required></textarea>
+                            <label for="message">Nachricht *</label>
+                        </div><!-- Submit Button-->
+                        <div><button class="btn btn-primary btn-xl my-4 px-5" id="submitButton" type="submit"
+                                onclick="successMessage()">Absenden</button>
+                        </div>
+                    </form>
+                    <iframe style="height: 0px;" name="transFrame" id="transFrame"></iframe>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-  </div>
-</div>
-
-<div class="container py-5 mt-5">
-    <div class="row gy-4 px-4 py-5 border-top">
-        <div class="col-md-8 my-auto py-4 ">
-            <img src="img/logo.svg" alt="Elias Thoma Logo"  height="80px" class="logo-footer">
-        </div>
-        <div class="col-md-4">
-            <ul class="list-group list-group-flush links-footer">
-                <li class="list-group-item footer-link">
-                    <a class="nav-link" aria-current="page" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Obstbaumpflege</a>
-                  </li>
-                  <li class="list-group-item footer-link">
-                    <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Geoinformatik</a>
-                  </li>
-                  <li class="list-group-item footer-link">
-                    <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Über Mich</a>
-                  </li>
-                  <li class="list-group-item footer-link">
-                    <a class="nav-link" href="impressum.html">Impressum</a>
-                  </li>
-                  <li class="list-group-item footer-link">
-                    <a class="nav-link" href="impressum.html#datenschutz">Datenschutz</a>
-                  </li>
-            </ul>
+    <div class="container py-5 mt-5">
+        <div class="row gy-4 px-4 py-5 border-top">
+            <div class="col-md-8 my-auto py-4 ">
+                <img src="img/logo.svg" alt="Elias Thoma Logo" height="80px" class="logo-footer">
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group list-group-flush links-footer">
+                    <li class="list-group-item footer-link">
+                        <a class="nav-link" aria-current="page"
+                            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Obstbaumpflege</a>
+                    </li>
+                    <li class="list-group-item footer-link">
+                        <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Geoinformatik</a>
+                    </li>
+                    <li class="list-group-item footer-link">
+                        <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Über Mich</a>
+                    </li>
+                    <li class="list-group-item footer-link">
+                        <a class="nav-link" href="impressum.html">Impressum</a>
+                    </li>
+                    <li class="list-group-item footer-link">
+                        <a class="nav-link" href="impressum.html#datenschutz">Datenschutz</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
