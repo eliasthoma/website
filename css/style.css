@@ -377,12 +377,12 @@ p {
 
   /*=========================== footer ===========================*/
 
-  #footer{
+  /* #footer{
     background-color: var(--card-background);
     border-radius: var(--corner-rounding) var(--corner-rounding) 0 0;
-    padding-top: 2rem;
+    margin-top: 2rem;
 
-  }
+  } */
 
   .logo-footer {
     padding-top: 1rem;
