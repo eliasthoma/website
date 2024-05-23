@@ -6,6 +6,7 @@
 
     /*custom colors*/
     --text-color: #2F1C00;
+    --text-accent: #387f31;
     --hover-light: #bbeea478;
     --hover-neutral: #9ED087;
     --hover-dark: #014804;
@@ -39,7 +40,7 @@ body {
     background-color: #1C5700 !important;
 }
 
-/*=========================== Headlines ===========================*/
+/*=========================== Headlines and text colors ===========================*/
 
 h1 {
     font-family: "Lexend Giga", sans-serif;
@@ -69,6 +70,10 @@ h5 {
 p {
     font-size: 1.25em;
     font-weight: 400;
+}
+
+.text-accent {
+    color: var(--text-accent);
 }
 
 /*=========================== img-text-card ===========================*/
