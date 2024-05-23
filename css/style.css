@@ -471,3 +471,12 @@ p {
 .icon-card .card-title {
     padding: 2rem 0;
 }
+
+/*=========================== title text card ===========================*/
+
+.title-text-card {
+    background-color: var(--card-background);
+    border-radius: var(--corner-rounding);
+    padding: 4rem 0;
+    margin: auto;
+}
