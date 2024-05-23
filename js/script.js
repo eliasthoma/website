@@ -74,15 +74,6 @@ function changeBtnColor() {
   }, 4000);
 }
 
-// Set copyright year
-function setCopyrightYear() {
-  var bla = document.getElementById('copyright');
-  console.log(bla.textContent)
-  bla.textContent += new Date().getFullYear();
-  bla.textContent += "asdasd";
-}
-
-setCopyrightYear();
 
 // ================================= NAVIGATION AUF DER SEITE =================================
 function navigateObstbaumpflege() {
