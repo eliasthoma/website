@@ -85,9 +85,12 @@ setCopyrightYear();
 
 // ================================= NAVIGATION AUF DER SEITE =================================
 function navigateObstbaumpflege() {
-  $.get('obstbaumpflege.html', function (response) {
-    $('#content').html(response);
-  })
+
+    $.get('obstbaumpflege.html', function (response) {
+      $('#content').html(response);
+    })
+
+
 
   var div = document.getElementById("navbar-obstbaumpflege");
   $(div).addClass("active");
@@ -97,13 +100,18 @@ function navigateObstbaumpflege() {
 
   var div = document.getElementById("navbar-geoinformatik");
   $(div).removeClass("active");
+
+
+  
 }
 
 
 function navigateGeoinformatik() {
-  $.get('geoinformatik.html', function (response) {
-    $('#content').html(response);
-  })
+
+    $.get('geoinformatik.html', function (response) {
+      $('#content').html(response);
+    })
+
 
   var div = document.getElementById("navbar-obstbaumpflege");
   $(div).removeClass("active");
@@ -113,6 +121,8 @@ function navigateGeoinformatik() {
 
   var div = document.getElementById("navbar-geoinformatik");
   $(div).addClass("active");
+
+
 }
 
 
@@ -147,6 +157,10 @@ function navigateDatenschutz() {
     behavior: 'smooth'
   });
 }
+
+
+
+
 
 
 
