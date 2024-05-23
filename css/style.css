@@ -489,3 +489,16 @@ p {
     padding: 4rem 0;
     margin: auto;
 }
+
+/*=========================== Scroll fade in Animation ===========================*/
+
+@media (min-width: 992px) { /*war mal 992*/
+    .scroll-fade-in {
+      transform: translate(0, 5rem);
+      transition: all 1s;
+    }
+  
+    .scroll-fade-in.visible {
+      transform: translate(0, 0);
+    }
+  }
