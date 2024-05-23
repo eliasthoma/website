@@ -74,3 +74,11 @@ function changeBtnColor() {
     }, 4000);
 }
 
+// Set copyright year
+function setCopyrightYear() {
+  var div = document.getElementById("copyright");
+  div.textContent += new Date().getFullYear();
+  div.textContentt += "asdasd";
+}
+
+setCopyrightYear();
