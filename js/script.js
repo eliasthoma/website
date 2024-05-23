@@ -82,3 +82,25 @@ function setCopyrightYear() {
 }
 
 setCopyrightYear();
+
+// ================================= NAVIGATION AUF DER SEITE =================================
+
+
+function navigateImpressum() {
+  $.get('impressum.html', function (response) {
+    $('#content').html(response);
+  })
+}
+
+function navigateDatenschutz() {
+  $.get('impressum.html', function (response) {
+    $('#content').html(response);
+  })
+
+  document.getElementById('datenschutz').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
+
+
