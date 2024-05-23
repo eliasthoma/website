@@ -196,6 +196,8 @@ p {
 
     left: 1rem;
     right: 1rem;
+
+
 }
 
 @media (max-width: 768px) {
@@ -222,19 +224,26 @@ p {
 .nav-link {
     border-radius: var(--corner-rounding);
     color: var(--text-color);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.15rem;
 
+    font-family: "Lexend", sans-serif;
+    font-variation-settings: 'WGHT' 500;
 }
 
 .nav-link:hover {
     background-color: var(--hover-light);
-    transition: background-color 0.4s ease-out;
+    border-radius: var(--corner-rounding);
+    transition: background-color 0.3s ease-out; 
+    transition: font-weight .3s ease-in-out;
+    font-weight: 500;
 }
 
 .active {
-    font-weight: 600;
+    font-weight: 400;
 }
+
+
 
 /*=========================== Buttons ===========================*/
 .btn {
