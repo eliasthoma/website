@@ -89,6 +89,10 @@ p {
     max-height: 40rem;
 }
 
+.img-text-card .card-title{
+    padding-bottom: 2rem;
+}
+
 /*corrigiert die Rundungen bei vert. gestapelter karte*/
 @media (max-width: 768px) {
     .img-text-card img {
