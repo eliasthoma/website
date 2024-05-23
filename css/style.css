@@ -451,3 +451,16 @@ p {
   #impressum > h3 {
     padding-top: 1.75rem;
   }
+
+  /*=========================== icon card ===========================*/
+  .icon-card {
+    background-color: var(--card-background);
+    border-radius: var(--corner-rounding);
+    padding: 4rem 0;
+    margin: auto;
+  }
+
+  .icon-card .card-title{
+    padding: 2rem 0;
+  }
+
