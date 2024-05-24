@@ -14,15 +14,45 @@
     rel="stylesheet">
   <script src="js/jquery-3.7.1.min.js"></script>
   <script type='text/javascript'>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    // dynamically load header from one source
     $.get('header.html', function (response) {
       $('#header').html(response);
     });
+    // dynamically load footer from one source
     $.get('footer.html', function (response) {
       $('#footer').html(response);
     })
-    $.get('obstbaumpflege.html', function (response) {
-      $('#content').html(response);
-    })
+    
+    // dynamically load content based on url param "site"
+    // usefull if you want to have a link to a specific site
+    const site = urlParams.get('site')
+    switch(site) {
+      case 'geoinformatik':
+        $.get('geoinformatik.html', function (response) {
+          $('#content').html(response);
+        })
+        break;
+      case 'impressum':
+        $.get('impressum.html', function (response) {
+          $('#content').html(response);
+        })
+        break;
+      case 'about':
+        $.get('about.html', function (response) {
+          $('#content').html(response);
+        })
+        break;
+       
+      default:
+      $.get('obstbaumpflege.html', function (response) {
+        $('#content').html(response);
+      })
+        break;
+    }
+    // TODO: load animation until data is loaded
   </script>
 </head>
 
@@ -31,9 +61,7 @@
   <div id="header"></div> <!-- links to header.html -->
 
   <!-- Content -->
-  <div class="container mt-5" id="content">
-
-  </div>
+  <div class="container mt-5" id="content"></div>
 
   <!-- Footer -->
   <div id="footer"></div> <!-- links to footer.html -->
