@@ -34,14 +34,11 @@ body {
     color: var(--text-color);
 }
 
-
-.text-bg-primary {
-    color: #fff !important;
-    background-color: #1C5700 !important;
+div {
+    scroll-margin-top: 120px;
 }
 
 /*=========================== Headlines and text colors ===========================*/
-
 h1 {
     font-family: "Lexend Giga", sans-serif;
     font-weight: 800;
@@ -77,7 +74,6 @@ p {
 }
 
 /*=========================== img-text-card ===========================*/
-
 .img-text-card {
     border-radius: var(--corner-rounding);
     border-width: 0;
@@ -117,13 +113,10 @@ p {
 }
 
 /*=========================== accordion ===========================*/
-
-
 .accordion-item {
     background-color: var(--transparent);
     border-width: 1px;
     border-color: var(--hover-light);
-
 }
 
 #accordionLeistungen {
@@ -166,17 +159,14 @@ p {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text-color);
-
 }
 
 .accordion-button:hover {
     background-color: var(--hover-light);
     border-color: var(--transparent);
-
 }
 
 .accordion-button:not(.collapsed) {
-
     box-shadow: none;
     color: var(--text-color);
 }
@@ -188,21 +178,20 @@ p {
 }
 
 .navbar {
+    left: 1rem;
+    right: 1rem;
+
     min-height: 40px !important;
+    max-width: 1400px;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: .75rem;
+
     background-color: rgba(255, 255, 255, 0.89) !important;
     backdrop-filter: blur(8px) saturate(120%) contrast(120%);
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     border-radius: var(--corner-rounding);
-
-    max-width: 1400px;
-
-    left: 1rem;
-    right: 1rem;
-
-
 }
 
 @media (max-width: 768px) {
@@ -225,13 +214,11 @@ p {
     padding-right: 2rem;
 }
 
-
 .nav-link {
     border-radius: var(--corner-rounding);
     color: var(--text-color);
     font-weight: 300;
     font-size: 1.15rem;
-
     font-family: "Lexend", sans-serif;
     font-variation-settings: 'WGHT' 500;
 }
@@ -247,8 +234,6 @@ p {
 .active {
     font-weight: 400;
 }
-
-
 
 /*=========================== Buttons ===========================*/
 .btn {
@@ -292,18 +277,15 @@ p {
 .btn-link,
 .btn-link:active,
 .btn-link:visited {
-
     background-color: var(--transparent) !important;
     border-color: var(--transparent) !important;
     color: var(--bs-primary);
-
 }
 
 .btn-link:hover {
     background-color: var(--hover-light) !important;
     color: var(--bs-primary);
 }
-
 
 /*=========================== Bilder Kachel Komponente ===========================*/
 .bilder-kachel img {
@@ -321,16 +303,12 @@ p {
     }
 }
 
-
 /*=========================== Textfeld Komponente ===========================*/
 .textblock {
     border-radius: var(--corner-rounding);
     background-color: var(--card-background);
-
     padding: 4rem 2rem;
-    ;
 }
-
 
 /*=========================== Hero ===========================*/
 
@@ -344,7 +322,6 @@ p {
     .hero {
         padding-top: 5rem;
         height: 35rem;
-
     }
 
     .hero-img {
@@ -359,10 +336,6 @@ p {
 
 
 /*=========================== contact ===========================*/
-
-#kontakt {
-    scroll-margin-top: 120px;
-}
 
 .kontakt-bild {
     object-fit: cover;
@@ -400,11 +373,6 @@ p {
     pointer-events: none;
 }
 
-/*=========================== imprint ===========================*/
-
-#datenschutz {
-    scroll-margin-top: 120px;
-}
 
 /*=========================== footer ===========================*/
 
@@ -412,7 +380,6 @@ p {
     background-color: var(--card-background);
     border-radius: var(--corner-rounding) var(--corner-rounding) 0 0;
     margin-top: 2rem;
-
   } */
 
 .logo-footer {
