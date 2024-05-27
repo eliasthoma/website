@@ -11,7 +11,8 @@
     --hover-neutral: #9ED087;
     --hover-dark: #014804;
 
-    --card-background: #F9FAF8;
+    --card-background: #f5f5f5;
+
     --transparent: #ffffff00;
 
     /*accordion dummmist fix*/
@@ -226,7 +227,7 @@ p {
 .nav-link:hover {
     background-color: var(--hover-light);
     border-radius: var(--corner-rounding);
-    transition: background-color 0.3s ease-out; 
+    transition: background-color 0.3s ease-out;
     transition: font-weight .3s ease-in-out;
     font-weight: 500;
 }
@@ -287,20 +288,16 @@ p {
     color: var(--bs-primary);
 }
 
-/*=========================== Bilder Kachel Komponente ===========================*/
-.bilder-kachel img {
+/*=========================== Kachel Komponente ===========================*/
+
+.kachel img {
     object-fit: cover;
     border-radius: var(--corner-rounding);
     max-height: 30vh;
     min-height: 20rem;
     width: 100%;
     height: 100%;
-}
 
-@media (max-width: 576px) {
-    .mobile-hidden {
-        display: none;
-    }
 }
 
 /*=========================== Textfeld Komponente ===========================*/
@@ -318,7 +315,7 @@ p {
 
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .hero {
         padding-top: 5rem;
         height: 35rem;
@@ -332,7 +329,7 @@ p {
         z-index: -1;
         overflow: hidden;
     }
-}
+} */
 
 
 /*=========================== contact ===========================*/
@@ -340,7 +337,6 @@ p {
 .kontakt-bild {
     object-fit: cover;
     border-radius: var(--corner-rounding);
-
     width: 100%;
     height: 100%;
     margin-bottom: 2rem;
@@ -459,7 +455,7 @@ p {
     background-color: var(--card-background);
     border-radius: var(--corner-rounding);
     padding: 4rem 0;
-    margin: auto;
+    /* margin: auto; */
 }
 
 /*=========================== Scroll fade in Animation ===========================*/
@@ -468,11 +464,11 @@ p {
 
     /*war mal 992*/
     .scroll-fade-in {
-      transform: translate(0, 5rem);
-      transition: all 1s;
+        transform: translate(0, 5rem);
+        transition: all 1s;
     }
-  
+
     .scroll-fade-in.visible {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
-  }
+}
