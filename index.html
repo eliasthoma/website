@@ -2,72 +2,75 @@
 <html lang="de">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elias Thoma - Obstbaumpflege & Geodatenmanagement</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&display=swap"
-    rel="stylesheet">
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script type='text/javascript'>
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Elias Thoma - Obstbaumpflege & Geodatenmanagement</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&display=swap"
+		rel="stylesheet">
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script type='text/javascript'>
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
 
-    // dynamically load header from one source
-    $.get('header.html', function (response) {
-      $('#header').html(response);
-    });
-    // dynamically load footer from one source
-    $.get('footer.html', function (response) {
-      $('#footer').html(response);
-    })
-    
-    // dynamically load content based on url param "site"
-    // usefull if you want to have a link to a specific site
-    const site = urlParams.get('site')
-    switch(site) {
-      case 'geoinformatik':
-        $.get('geoinformatik.html', function (response) {
-          $('#content').html(response);
-        })
-        break;
-      case 'impressum':
-        $.get('impressum.html', function (response) {
-          $('#content').html(response);
-        })
-        break;
-      case 'about':
-        $.get('about.html', function (response) {
-          $('#content').html(response);
-        })
-        break;
-       
-      default:
-      $.get('obstbaumpflege.html', function (response) {
-        $('#content').html(response);
-      })
-        break;
-    }
-    // TODO: load animation until data is loaded
-  </script>
+		// dynamically load header from one source
+		$.get('header.html', function (response) {
+			$('#header').html(response);
+		});
+		// dynamically load footer from one source
+		$.get('footer.html', function (response) {
+			$('#footer').html(response);
+		})
+
+		// dynamically load content based on url param "site"
+		// usefull if you want to have a link to a specific site
+		const site = urlParams.get('site')
+		switch (site) {
+			case 'geoinformatik':
+				$.get('geoinformatik.html', function (response) {
+					$('#content').html(response);
+					$('#navbar-geoinformatik').addClass("active");
+				})
+				break;
+			case 'about':
+				$.get('about.html', function (response) {
+					$('#content').html(response);
+					$('#navbar-about').addClass("active");
+				})
+				break;
+			case 'impressum':
+				$.get('impressum.html', function (response) {
+					$('#content').html(response);
+				})
+				break;
+
+			default:
+				$.get('obstbaumpflege.html', function (response) {
+					$('#content').html(response);
+					$('#navbar-obstbaumpflege').addClass("active");
+				})
+				break;
+		}
+		// TODO: load animation until data is loaded
+	</script>
 </head>
 
 <body>
-  <!-- Header -->
-  <div id="header"></div> <!-- links to header.html -->
+	<!-- Header -->
+	<div class="container" id="header"></div> <!-- links to header.html -->
 
-  <!-- Content -->
-  <div class="container mt-5" id="content"></div>
+	<!-- Content -->
+	<div class="container mt-5" id="content"></div>
 
-  <!-- Footer -->
-  <div id="footer"></div> <!-- links to footer.html -->
+	<!-- Footer -->
+	<div class="container" id="footer"></div> <!-- links to footer.html -->
 
-  <script src="js/bootstrap.js"></script>
-  <script src="js/script.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

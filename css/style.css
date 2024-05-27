@@ -35,7 +35,7 @@ body {
 }
 
 div {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 12vh;
 }
 
 /*=========================== Headlines and text colors ===========================*/
@@ -232,7 +232,7 @@ p {
 }
 
 .active {
-    font-weight: 400;
+    font-weight: 550;
 }
 
 /*=========================== Buttons ===========================*/
@@ -464,7 +464,9 @@ p {
 
 /*=========================== Scroll fade in Animation ===========================*/
 
-@media (min-width: 992px) { /*war mal 992*/
+@media (min-width: 992px) {
+
+    /*war mal 992*/
     .scroll-fade-in {
       transform: translate(0, 5rem);
       transition: all 1s;
