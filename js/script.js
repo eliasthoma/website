@@ -60,7 +60,7 @@ function changeBtnColor() {
 
 	setTimeout(function () {
 		//Reset everything after success message
-		$(btn).removeClass("successBtn")
+		$(btn).removeClass("successBtn");
 		btn.innerHTML = "Absenden";
 
 		$(form).removeClass("was-validated");
@@ -93,5 +93,5 @@ $(document).on("scroll", function () {
 	}
 });
 
-
+// ================================= Hilfefunktionen =================================
 
