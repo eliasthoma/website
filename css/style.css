@@ -325,10 +325,11 @@ p {
     position: absolute;
     z-index: -1;
     object-fit: cover;
-    background: linear-gradient(90deg, rgba(34,78,0,0.7) 20%, rgba(34, 78, 0, 0.2) 100%); 
+    background: linear-gradient(90deg, rgba(185, 229, 152, 0.7) 20%, rgba(34, 78, 0, 0.2) 100%); 
 }
 
 .hero-background {
+    filter: brightness(1.2);
     left: 0;
     top: 0;
     width: 100%;
@@ -341,7 +342,7 @@ p {
 .hero-text {
     padding: 12rem 4rem;
     padding-right: 0;
-    color: white;
+
     
 }
 
@@ -364,7 +365,7 @@ p {
     }
 
     .hero-gradient{
-        background: linear-gradient(90deg, rgba(34,78,0,0.7) 100%, rgba(34, 78, 0, 0.2) 101%); 
+        background: linear-gradient(90deg, rgba(185, 229, 152, 0.7) 100%, rgba(34, 78, 0, 0.2) 101%); 
     }
 } 
  
