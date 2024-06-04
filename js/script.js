@@ -74,24 +74,48 @@ function changeBtnColor() {
 	}, 4000);
 }
 
-// ================================= Scroll-in Viewport Animation =================================
 
-$(document).on("scroll", function () {
-	var pageTop = $(document).scrollTop();
-	var pageBottom = pageTop + $(window).height();
-	var tags = $(".scroll-fade-in"); //war mal ".tag"
 
-	var width = (window.innerWidth > 0) ? window.innerWidth : screen.width; // Device screen size
 
-	for (var i = 0; i < tags.length; i++) {
-		var tag = tags[i];
-		if ($(tag).position().top < pageBottom) {
-			$(tag).addClass("visible");
-		} else {
-			$(tag).removeClass("visible"); //hiermit animiert es immer wieder
-		}
-	}
-});
 
 // ================================= Hilfefunktionen =================================
+
+
+(function (window, document, undefined) {
+
+	// code that should be taken care of right away
+
+	window.onload = init;
+
+	function init() {
+		// the code to be called when the dom has loaded
+
+		// ============= Scroll-in Viewport Animation =============
+		$(document).on("scroll", function () {
+			var pageTop = $(document).scrollTop();
+			var pageBottom = pageTop + $(window).height();
+			var tags = $(".scroll-fade-in"); //war mal ".tag"
+		
+			var width = (window.innerWidth > 0) ? window.innerWidth : screen.width; // Device screen size
+		
+			for (var i = 0; i < tags.length; i++) {
+				var tag = tags[i];
+				if ($(tag).position().top < pageBottom) {
+					$(tag).addClass("visible");
+				} else {
+					$(tag).removeClass("visible"); //hiermit animiert es immer wieder
+				}
+			}
+		});
+
+		// ============= Navbar Platzhalter =============
+		//sets the placeholder to the height of the navbar
+		const navbar = document.querySelector('#navbar');
+		var newHeight = navbar.clientHeight * 2.2;
+		document.querySelector('.placeholderNavbar').setAttribute("style","height:" + newHeight + "px;");
+	}
+
+})(window, document, undefined);
+
+
 
