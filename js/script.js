@@ -110,9 +110,9 @@ function changeBtnColor() {
 
 		// ============= Navbar Platzhalter =============
 		//sets the placeholder to the height of the navbar
-		const navbar = document.querySelector('#navbar');
-		var newHeight = navbar.clientHeight * 2.2;
-		document.querySelector('.placeholderNavbar').setAttribute("style","height:" + newHeight + "px;");
+		//const navbar = document.querySelector('#navbar');
+		//var newHeight = navbar.clientHeight * 2.2;
+		//document.querySelector('.placeholderNavbar').setAttribute("style","height:" + newHeight + "px;");
 	}
 
 })(window, document, undefined);
