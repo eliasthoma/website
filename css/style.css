@@ -340,7 +340,7 @@ p {
     overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
-    object-position: 100% 10%; /* hiermit bild verschieben sodass es passt*/
+    object-position: 100% 80%; /* hiermit bild verschieben sodass es passt*/
 }
 
 .fullscreen{
