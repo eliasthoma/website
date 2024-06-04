@@ -409,12 +409,17 @@ div.accordion-item:first-of-type {
 
 /*=========================== contact ===========================*/
 
+.top-center-img {
+    object-position: 50% 0%; /* hiermit bild verschieben sodass es passt*/
+}
+
 .kontakt-bild {
     object-fit: cover;
     border-radius: var(--corner-rounding);
     width: 100%;
     height: 100%;
     margin-bottom: 2rem;
+    object-position: 50% 0%; /* hiermit bild verschieben sodass es passt*/
 }
 
 .card-design {
@@ -492,6 +497,7 @@ div.accordion-item:first-of-type {
     background-color: var(--bs-primary);
     border-color: var(--transparent)
 }
+
 
 /*=========================== impressum ===========================*/
 
