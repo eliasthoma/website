@@ -36,6 +36,7 @@ html {
 
 body {
     color: var(--text-color);
+    overflow-x:hidden
 }
 
 div {
@@ -325,6 +326,7 @@ p {
     overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
+    
 }
 
 .hero-background {
@@ -341,7 +343,6 @@ p {
 
 .fullscreen{
     position: relative;
-    overflow: visible;
 }
 
 .hero-text {
@@ -353,6 +354,7 @@ p {
     border-radius: var(--corner-rounding);
     position: relative;
     height: 40rem;
+    
 }
 
  @media (max-width: 768px) {
