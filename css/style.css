@@ -248,10 +248,11 @@ p {
 .btn-primary:active,
 .btn-primary:visited {
     font-weight: 600;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     background-color: var(--bs-primary) !important;
     border-color: var(--transparent) !important;
 }
@@ -263,11 +264,12 @@ p {
 .btn-secondary,
 .btn-secondary:active,
 .btn-secondary:visited {
-    font-weight: 600;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     background-color: var(--hover-light) !important;
     border-color: var(--transparent) !important;
     color: var(--hover-dark);
