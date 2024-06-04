@@ -331,7 +331,7 @@ div.accordion-item:first-of-type {
     position: absolute;
     z-index: -1;
     object-fit: cover;
-    background: linear-gradient(90deg, rgba(24, 54, 1, 0.858) 30%, rgba(34, 78, 0, 0.2) 70%); 
+    background: linear-gradient(90deg, rgba(24, 54, 1, 0.502) 30%, rgba(34, 78, 0, 0.0) 60%); 
     overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
@@ -347,7 +347,7 @@ div.accordion-item:first-of-type {
     overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
-    object-position: 100% 80%; /* hiermit bild verschieben sodass es passt*/
+    object-position: 100% 30%; /* hiermit bild verschieben sodass es passt*/
 }
 
 .fullscreen{
@@ -373,7 +373,7 @@ div.accordion-item:first-of-type {
     }
     .hero-background {
 
-        object-position: 80% 60%; /* hiermit bild verschieben sodass es mobile passt*/
+        object-position: 70% 50%; /* hiermit bild verschieben sodass es mobile passt*/
         object-fit: cover;
         
     }
