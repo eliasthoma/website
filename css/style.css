@@ -118,13 +118,20 @@ p {
 /*=========================== accordion ===========================*/
 .accordion-item {
     background-color: var(--transparent);
-    border-width: 1px;
-    border-color: var(--hover-light);
+    border-width: .1rem !important;
+    border-color: #d6d6d6 !important;
+    border-radius: var(--corner-rounding) !important;
+}
+
+div.accordion-item:first-of-type {
+    border-radius: var(--corner-rounding) !important;
+    border-width: 0px !important;
+
 }
 
 #accordionLeistungen {
     background-color: var(--card-background);
-    border-radius: var(--corner-rounding);
+    border-radius: var(--corner-rounding) !important;
 }
 
 .accordion-item h2 {
