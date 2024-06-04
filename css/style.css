@@ -7,9 +7,9 @@
     /*custom colors*/
     --text-color: #2F1C00;
     --text-accent: #387f31;
-    --hover-light: #bbeea4;
+    --hover-light: #d0e8c6;
     --hover-neutral: #9ED087;
-    --hover-dark: #014804;
+    --hover-dark: #013804;
 
     --card-background: #f5f5f5;
     --card-background-dark: #1d2e1c65;
@@ -198,8 +198,8 @@ div.accordion-item:first-of-type {
     padding-bottom: 1rem;
     margin-top: .75rem;
 
-    background-color: rgba(255, 255, 255, 0.89) !important;
-    backdrop-filter: blur(8px) saturate(120%) contrast(120%);
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(8px) saturate(130%) brightness(200%) ;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     border-radius: var(--corner-rounding);
 }
@@ -299,6 +299,27 @@ div.accordion-item:first-of-type {
     background-color: var(--hover-light) !important;
     color: var(--bs-primary);
 }
+
+.btn-light,
+.btn-light:active,
+.btn-light:visited {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    background-color: --White !important;
+    border-color: var(--transparent) !important;
+    color: var(--hover-dark);
+}
+
+.btn-light:hover {
+    background-color: var(--hover-light) !important;
+    color: var(--bs-primary);
+}
+
+
 
 /*=========================== Kachel Komponente ===========================*/
 
