@@ -365,7 +365,7 @@ div.accordion-item:first-of-type {
     position: absolute;
     z-index: -1;
     object-fit: cover;
-    background: linear-gradient(90deg, rgba(24, 54, 1, 0.502) 30%, rgba(34, 78, 0, 0.0) 60%); 
+    background: linear-gradient(90deg, rgba(24, 54, 1, 0.8) 40%, rgba(34, 78, 0, 0.0) 90%); 
     overflow: hidden;
     left: 50%;
     transform: translateX(-50%);
