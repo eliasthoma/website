@@ -209,6 +209,19 @@ div.accordion-item:first-of-type {
     .navbar-brand {
         padding-left: 2rem;
     }
+
+    .navbar-brand > img {
+        height: 24px;
+    }
+
+    .navbar {
+        left: .5rem;
+        right: .5rem;
+        
+        margin-top: .5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem; 
+    }
 }
 
 .navbar-nav {
@@ -222,7 +235,7 @@ div.accordion-item:first-of-type {
 
 .navbar-toggler {
     border: none;
-    padding-right: 2rem;
+    margin-right: 2rem;
 }
 
 .nav-link {
