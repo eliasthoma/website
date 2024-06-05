@@ -113,9 +113,25 @@ function changeBtnColor() {
 		//const navbar = document.querySelector('#navbar');
 		//var newHeight = navbar.clientHeight * 2.2;
 		//document.querySelector('.placeholderNavbar').setAttribute("style","height:" + newHeight + "px;");
+
+		// ============= Navbar Schließen =============
+		/// When you click everywhere in the document
+		$(document).click(function (event) {
+			/// If *navbar-collapse* is not among targets of event
+			if (!$(event.target).is('.navbar-collapse *')) {
+
+				/// Collapse every *navbar-collapse*
+				$('.navbar-collapse').collapse('hide');
+
+			}
+		});
 	}
 
 })(window, document, undefined);
 
+
+function closeNavbar() {
+	$('.navbar-collapse').collapse('hide');
+}
 
 
