@@ -235,7 +235,7 @@ div.accordion-item:first-of-type {
 
 .navbar-toggler {
     border: none;
-    padding-right: 2rem;
+    margin-right: 2rem;
 }
 
 .nav-link {
