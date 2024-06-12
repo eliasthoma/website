@@ -568,11 +568,6 @@ div.accordion-item:first-of-type {
         margin-right: auto;
     }
 
-    .logo-footer {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 .form-check-input:checked {
