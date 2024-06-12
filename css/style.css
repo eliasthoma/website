@@ -578,26 +578,29 @@ div.accordion-item:first-of-type {
 
 /*=========================== impressum ===========================*/
 
-#impressum {
+#rechtliches {
     max-width: 40rem;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: rem;
 }
 
-#impressum li {
+#rechtliches > div > ul > li {
     font-size: 1.25em;
+    list-style-type: circle;
 }
 
-#impressum>div>h1 {
+#rechtliches>div>h1 {
+    font-weight: 900;
     padding-top: 7rem;
 }
 
-#impressum>h2 {
+#rechtliches>h2 {
+    font-weight: 900;
     padding-top: 3rem;
 }
 
-#impressum>h3 {
-    padding-top: 1.75rem;
+#rechtliches>h3 {
+    padding-top: 1rem;
+    font-size: 1.25em;
 }
 
 /*=========================== icon card ===========================*/
