@@ -1,18 +1,83 @@
-<div class="row hero">
+<div class="hero pb-5" id="hero">
 	<div class="fullscreen">
 		<div class="hero-gradient"></div>
-		<img class="hero-background" src="img/sd/titleimage.jpg">	
+		<img class="hero-background" src="img/sd/titleimage.jpg">
 	</div>
-	<div class="col-md-12 hero-text">
-		<h1 class="hero-title">Obst&shy;baum&shy;pflege</h1>
-		<p>Ihr Ansprechpartner im Kreis Aschaffenburg</p>
-		<a href="#kontakt" type="button" class="btn btn-light mt-2">Schreib mir</a> <br>
+	<div class="placeholderNavbar"></div>
+	<div class="container">
+		<div class="row pt-5">
+			<div class="col-md-6 hero-text my-auto">
+				<h1 class="hero-title">Obst&shy;baum&shy;pflege</h1>
+				<p>Ihr Ansprechpartner im Kreis Aschaffenburg</p>
+			</div>
+
+			<div class="col-md-6 ">
+
+				<div class="row quickContactbackdrop">
+					<div>
+						<h5>Wie kann ich Sie unterstützen?</h5>
+					</div>
+
+					<form target="transFrame" id="quickcontactForm" method="post" action="php/send-mail-quick.php"
+						class="needs-validation" novalidate>
+
+						<div class="col-lg-12 py-3">
+							<div class="dropdown">
+								<button class="btn btn-light btn-dropdown dropdown-toggle " type="button"
+									data-bs-toggle="dropdown" aria-expanded="false" id="dropdownContact">
+									Bitte auswählen
+								</button>
+								<ul class="dropdown-menu container-fluid" aria-labelledby="dropdownContact">
+									<li><a class="dropdown-item" href="#" onclick="showGenre(this)">Obstbaumpflege</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#" onclick="showGenre(this)">Geoinformatik</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#" onclick="showGenre(this)">Sonstiges</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-12">
+							<!-- Email address input-->
+							<div class="form-floating mb-3">
+								<input class="form-control" id="emailquick" name="emailquick" type="email"
+									placeholder="name@example.com" data-sb-validations="required,email" required />
+								<label for="emailquick">Ihre E-Mail Adresse</label>
+								<div class="invalid-feedback">
+									Bitte gib eine gültige E-Mail-Adresse an
+								</div>
+								<div id="emailHelp" class="form-text">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-12">
+							<!-- Submit Button-->
+							<div><button class="btn btn-primary btn-xl my-4 px-5 w-100" id="submitButton" type="submit"
+									onclick="successMessage()">Absenden</button>
+							</div>
+						</div>
+
+
+
+					</form>
+					<iframe style="height: 0px;" name="transFrame" id="transFrame"></iframe>
+				</div>
+			</div>
+		</div>
 	</div>
+
+
 </div>
 
-
 <!-- das ist der alte hero -->
-<div class="row my-5 mx-0 hero hidden"> 
+<div class="row my-5 mx-0 hero hidden">
 	<div class="col-md-6 align-self-center">
 		<h1>Obstbaumpflege</h1>
 		<p>mit Verstand für unsere Natur</p>
@@ -29,7 +94,9 @@
 	</div>
 	<div class="col-md-6 card-text g-5 px-5">
 		<h3 class="card-title">Für mehr Artenvielfalt</h5>
-			<p>Der Lebensraum von vielen Tier- und Pflanzarten ist durch mangelnde Pflege stark bedroht. Der Erhalt von Streuobstwiesen liegt mir am Herzen. Als <b>zertifizierter Streuobst-Baumwart</b> bin Ich Ihr Ansprechpartner im Bereich Streuobst in Aschaffenburg und
+			<p>Der Lebensraum von vielen Tier- und Pflanzarten ist durch mangelnde Pflege stark bedroht. Der Erhalt von
+				Streuobstwiesen liegt mir am Herzen. Als <b>zertifizierter Streuobst-Baumwart</b> bin Ich Ihr
+				Ansprechpartner im Bereich Streuobst in Aschaffenburg und
 				Umgebung.</p>
 	</div>
 </div>
@@ -39,13 +106,17 @@
 	<div class="row py-3">
 		<div class="col-md">
 			<p>
-				Der Obstbaumschnitt ist wichtig, um gesunde Bäume zu fördern und eine reiche Ernte zu erzielen. Der Baum erhält durch den
-				Schnitt ein stabiles und gut zugängliches Kronengerüst. Durch bessere Belichtung und Belüftung werden Pilzkrankheiten vorgebeugt und hochwertige Früchte erzeugt.
+				Der Obstbaumschnitt ist wichtig, um gesunde Bäume zu fördern und eine reiche Ernte zu erzielen. Der Baum
+				erhält durch den
+				Schnitt ein stabiles und gut zugängliches Kronengerüst. Durch bessere Belichtung und Belüftung werden
+				Pilzkrankheiten vorgebeugt und hochwertige Früchte erzeugt.
 				Ein regelmäßiger Schnitt fördert die Neubildung von Fruchtholz und Vitalität des Baumes.
 			</p>
 		</div>
 		<div class="col-md">
-			<p>Beim Baumschnitt ist es wichtig größere Wunden zu vermeiden, Äste abzuleiten und keine Stumeln stehen zu lassen. Mittels Seilklettertechnik können alle Stellen im Baum sicher erreicht werden, bei kleineren Bäumen genügt auch eine spezielle Obstbaumleiter.</p>
+			<p>Beim Baumschnitt ist es wichtig größere Wunden zu vermeiden, Äste abzuleiten und keine Stumeln stehen zu
+				lassen. Mittels Seilklettertechnik können alle Stellen im Baum sicher erreicht werden, bei kleineren
+				Bäumen genügt auch eine spezielle Obstbaumleiter.</p>
 		</div>
 	</div>
 	<p>
@@ -144,8 +215,8 @@
 				<div class="accordion-body px-5">
 					<div class="row gy-5">
 						<div class="col-sm-8">
-							Ihre Obstbäume wurden länger nicht geschnitten oder brauchen mal eine Runderneuerung? 
-							Ich bringe die Bäume wieder in From und födere so die Gesundheit des Baumes. 
+							Ihre Obstbäume wurden länger nicht geschnitten oder brauchen mal eine Runderneuerung?
+							Ich bringe die Bäume wieder in From und födere so die Gesundheit des Baumes.
 							Gerne vereinbare ich individuelle Vorgaben (z.B. stärke des Eingriffs) mit Ihnen.
 						</div>
 						<div class="col-sm-4">
@@ -229,7 +300,7 @@
 	<div class="row h-100 title-text-card justify-content-center ">
 		<div class="col px-5 h-100">
 			<!-- weiß noch nicht was mit  der animation gemacht werden kann, habs als ladeanimation nicht gescheit hinbekommen -->
-			<!-- <div class="page-loader">
+<!-- <div class="page-loader">
 				<dotlottie-player autoplay loop speed="0.8" mode="normal" src="/img/loader.lottie"
 					style="max-width: 320px; min-width: 150px;" class="loader-animation mx-auto"></dotlottie-player>
 			</div>

@@ -79,6 +79,25 @@ function changeBtnColor() {
 
 
 // ================================= Hilfefunktionen =================================
+function updateHeroHeight() {
+	var heroHeight = document.getElementById('hero').offsetHeight;
+	var heroBG = document.getElementsByClassName("hero-background");
+	var heroGrad = document.getElementsByClassName("hero-gradient");
+
+	console.log(heroHeight);
+	console.log(heroBG);
+	console.log(heroGrad);
+
+	for(var i=0;i<heroGrad.length;i++){
+		heroGrad[i].style.height = heroHeight + "px";
+	}
+
+	for(var i=0;i<heroBG.length;i++){
+		heroBG[i].style.height = heroHeight + "px";
+	}
+}
+
+
 
 
 (function (window, document, undefined) {
@@ -89,6 +108,15 @@ function changeBtnColor() {
 
 	function init() {
 		// the code to be called when the dom has loaded
+		
+
+		// update variables on resize
+		window.addEventListener('resize', function (event) {
+			console.log('resized');
+			updateHeroHeight()
+		});
+
+		updateHeroHeight()
 
 		// ============= Scroll-in Viewport Animation =============
 		$(document).on("scroll", function () {
@@ -134,4 +162,9 @@ function closeNavbar() {
 	$('.navbar-collapse').collapse('hide');
 }
 
+
+// ================================= Dropdown =================================
+function showGenre(item) {
+	document.getElementById("dropdownContact").innerHTML = item.innerHTML; //Changes the shown selected Reason
+}  
 
