@@ -489,7 +489,7 @@ div.accordion-item:first-of-type {
     width: 100%;
     height: 100%;
     margin-bottom: 2rem;
-    object-position: 50% 0%; /* hiermit bild verschieben sodass es passt*/
+    object-position: 50% 40%; /* hiermit bild verschieben sodass es passt*/
 }
 
 .card-design {
@@ -628,7 +628,7 @@ div.accordion-item:first-of-type {
 
 .blur-img-background {
     background-color: var(--card-background-dark); 
-    background-image: url("../img/sd/blur.jpg");  
+    background-image: url("../img/shooting/klettern_nah.jpg");  
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
